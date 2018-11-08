@@ -1,0 +1,23 @@
+name: apply
+version: 1.0
+author: Andres Löh
+maintainer: andres@well-typed.com
+license: BSD3
+build-type: Simple
+cabal-version: >= 2.0
+
+library
+  hs-source-dirs: src
+  default-language: Haskell2010
+  build-depends:
+    base,
+    generic-lens,
+    generics-sop,
+    microlens
+  exposed-modules:
+    Generics.Apply
+    Generics.Apply.Base
+    Generics.Apply.Classes
+    Generics.Apply.GenericLens
+    Generics.Apply.GHCGenerics
+    Generics.Apply.SOP
